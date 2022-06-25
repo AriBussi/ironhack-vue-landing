@@ -1,0 +1,117 @@
+body {
+    background-color: #1A1A1A;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CONTROLS ___________________________ */
+.controls {
+    border-bottom: 1px solid rgba(60, 60, 60, .29);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    height: 55px;
+    font-size: 13px;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.logo span {
+    padding-left: 8px;
+}
+
+/* search */
+.searchbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.87);
+    opacity: .6;
+    flex-grow: 1;
+}
+
+.searchbox > span {
+    padding: 0 8px;
+}
+
+.searchbox > .nav-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.search-shortcut {
+    color: rgba(235, 235, 235, 0.38);
+    border: 1px solid rgba(235, 235, 235, 0.38);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+/* nav */
+nav a {
+    color: rgba(255, 255, 255, 0.87);
+    padding: 0 12px;
+}
+
+/* control buttons */
+.appearance {
+    background-color: rgb(47, 47, 47);
+    border-radius: 30px;
+    border: 1px solid rgba(84, 84, 84, 0.65);
+    width: 44px;
+    height: 22px;
+    position: relative;
+    margin: 0 8px;
+}
+
+.appearance > div {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.appearance .nav-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.social-icons {
+    display: flex;
+    max-width: 145px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+}
+
+.nav-icon {
+    fill: rgb(235, 235, 235);
+    opacity: .6;
+    width: 20px;
+    height: 20px;
+}
+
