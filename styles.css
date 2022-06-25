@@ -115,3 +115,66 @@ nav a {
     height: 20px;
 }
 
+/* HERO ___________________________ */
+#hero {
+    text-align: center;
+    padding: 96px 32px;
+}
+
+#hero h1 {
+    font-size: 76px;
+    font-weight: 900;
+    background-color: #42d392;
+    background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 22px;
+    color: rgba(235, 235, 235, 0.6);
+    margin: 24px auto 40px;
+}
+
+.first-actions {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    color: rgb(170, 200, 228);
+    padding: 8px 18px;
+    border-radius: 8px;
+    margin-right: 18px;
+    line-height: 24px;
+}
+
+#icon-arrow {
+    fill: rgb(170,200,228);
+    padding-left: 8px;
+}
+
+.button-green  {
+    background-color: rgb(66, 184, 131);
+    color: rgb(33, 53, 71);
+}
+
+#icon-play {
+    margin-right: 8px;
+    width: 24px;
+    fill: rgb(33, 53, 71);
+    position: relative;
+    top: 3px;
+}
+
+/*refactor svg*/
