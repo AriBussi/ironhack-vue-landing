@@ -1,13 +1,22 @@
 body {
     background-color: #1A1A1A;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, .87);
     font-family: 'Inter', sans-serif;
+    letter-spacing: .2px;
+    margin: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+  }
+
+h1, h2, p {
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, .87);
 }
 
 svg {
@@ -29,17 +38,22 @@ svg {
     height: 12px;
 }
 
+.title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
 /* CONTROLS ___________________________ */
 .controls {
+    background-color: #1A1A1A;
     border-bottom: 1px solid rgba(84, 84, 84, .48);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
     height: 55px;
-    font-size: 0.813rem;
+    font-size: .813rem;
     position: fixed;
-    box-sizing: border-box;
     width: 100%;
 }
 
@@ -63,7 +77,7 @@ svg {
     padding: 0 1rem;
     background-color: transparent;
     border: none;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, .87);
     opacity: .6;
     flex-grow: 1;
 }
@@ -98,7 +112,7 @@ svg {
 .appearance {
     background-color: rgb(47, 47, 47);
     border-radius: 1.875rem;
-    border: 1px solid rgba(84, 84, 84, 0.65);
+    border: 1px solid rgba(84, 84, 84, .65);
     cursor: pointer;
     width: 40px;
     height: 22px;
@@ -114,8 +128,8 @@ svg {
     align-items: center;
     background-color: #1A1A1A;
     border-radius: 50%;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 .social-icons {
@@ -156,7 +170,7 @@ svg {
 
 #hero p {
     font-size: 1.375rem;
-    color: rgba(235, 235, 235, 0.6);
+    color: rgba(235, 235, 235, .6);
     margin: 1.5rem auto 2.5rem;
     letter-spacing: .2px;
 }
@@ -164,7 +178,7 @@ svg {
 .first-actions {
     display: flex;
     justify-content: center;
-    max-width: 26.25rem;
+    max-width: 30rem;
     margin: 0 auto;
     height: 2.5rem;
 }
@@ -182,12 +196,13 @@ svg {
 
 #icon-arrow {
     fill: rgb(170,200,228);
-    padding-left: .5rem;
+    margin-left: .5rem;
 }
 
 .button-green  {
     background-color: rgb(66, 184, 131);
     color: rgb(33, 53, 71);
+    font-weight: 600;
 }
 
 #icon-play {
@@ -198,14 +213,13 @@ svg {
     top: 3px;
 }
 
-/*refactor svg*/
-
+/* SPECIAL SPONSOR ___________________________ */
 #special-sponsor {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(235, 235, 235, 0.6);
-    font-size: 13px;
+    color: rgba(235, 235, 235, .6);
+    font-size: .813rem;
     padding: .75rem 1.5rem;
     border-bottom: 1px solid rgba(84, 84, 84, .48);
     border-top: 1px solid rgba(84, 84, 84, .48);
@@ -216,3 +230,25 @@ svg {
     width: 6.25rem;
     margin: 0 1.5rem;
 }
+
+/* HIGHLIGHTS ___________________________ */
+#highlights {
+    display: flex;
+    justify-content: center;
+    padding: 2.625rem 2rem;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.highlight {
+    flex: 0 32%;
+    padding: 1.75rem 2.25rem;
+}
+
+.highlight p {
+    margin-top: .938rem;
+    color: rgba(255, 255, 255, .6);
+    line-height: 1.5rem;
+    font-size: .938rem;
+}
+
